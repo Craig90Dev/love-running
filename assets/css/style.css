@@ -1,32 +1,38 @@
+/*Google fonts import*/
+<style>@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+</style>
+
 /*Asterisk wildcard selector to override default styles by the browser*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 /*General styles*/
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     /*Generic project styles*/
     color: #3a3a3a;
-
+    font-family: 'lato', sans-serif;
 }
 
 /*header*/
-header{
-    background-color:bisque
+header {
+    background-color: bisque
 }
+
 /*main content*/
-main{
+main {
     background-color: blue;
     /*make main element take up any surplus to force footer to bottom of page*/
     flex: 1 0 auto;
 
 }
+
 /*footer*/
-footer{
+footer {
     background-color: brown;
 }
