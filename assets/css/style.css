@@ -1,6 +1,5 @@
 /*Google fonts import*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /*Asterisk wildcard selector to override default styles by the browser*/
 * {
@@ -99,7 +98,7 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    background: url("../images/hero-image.webp") no-repeat center center / cover;
     position: relative;
 }
 
@@ -111,39 +110,57 @@ main {
     width: 80%;
     min-height: 200px;
     padding-top: 40px;
+    padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 }
-        /*Reason Section*/
-        #reasons {
-            width: 90%;
-            margin-top: 20px auto;
-        }
-    
-        #reasons h2 {
-            margin-bottom: 20px;
-            font-size: 280%;
-            text-align: center;
-        }
-    
-        #benefits-physical > div,
-        #benefits-mental > div {
-            line-height: 20px;
-            margin-bottom: 20px;
-        }
-    
-        #benefits p {
-            padding: 0 20px;
-        }
-    
-        hr {
-            border-top: 1px solid #3a3a3a;
-            margin: 5px 0;
-        }
-      
 
+/*Reason Section*/
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    font-size: 280%;
+    text-align: center;
+}
+
+#benefits-physical>div,
+#benefits-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+#circle-cover-bg {
+    background: url(../images/reasons-image.webp) no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /*footer*/
 #social-networks {
